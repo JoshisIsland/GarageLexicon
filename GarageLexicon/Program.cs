@@ -35,5 +35,12 @@ namespace GarageLexicon
         {
 
         }
+
+        static void createGarage()
+        {
+            Console.WriteLine("How big should the garage be, how many parking spaces does the garage have?");
+            int size = Convert.ToInt32(Console.ReadLine());
+            Garage<Vehicle> garage = new(size);
+        }
     }
 }
